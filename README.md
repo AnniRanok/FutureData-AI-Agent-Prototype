@@ -1,33 +1,42 @@
-# FutureData AI Agent
+# AI Agent Prototype for Financial Data Analysis (FutureData)
 
-Welcome to **FutureData AI Agent** 
+## Overview
 
-**FutureData** is a new generation AI assistant for finance teams working with large reporting volumes, data lakes and consolidation systems (eg Oracle HFM, Tagetik, OneStream, SAP BPC).
+This repository contains a technical prototype of an AI-assisted system designed for exploratory financial data analysis, anomaly detection, and KPI interpretation.
 
-Instead of manual analysis, downloading Excel files and endless "cleaning" — FutureData automatically processes financial flows, detects anomalies, explains results and predicts risks.
+The system demonstrates how large language models can be combined with classical data processing techniques to support financial analysts in reviewing structured datasets and generating analytical insights.
 
-This version represents a **technical draft** on the way to our full AI assistant for finance.  
-🔄 **Note:** This is not a final product — but a working base we’re shaping into a full assistant for finance teams.
+This project is an experimental implementation and should be considered a research prototype rather than a production system.
+
+
+## Objectives
+
+The main goal of this prototype is to explore the integration of:
+
+- Natural language interaction with financial datasets
+- Automated data analysis pipelines
+- Statistical anomaly detection methods
+- AI-assisted explanation of financial metrics
+
+
+## Core Capabilities
+
+- Natural language interface for querying financial data using LLMs (OpenAI API)
+- Automated data processing using Pandas and NumPy
+- KPI computation and exploratory data analysis
+- Anomaly detection using statistical methods (Z-score based approach)
+- Generation of Python code for ad-hoc analytical tasks
+- Interactive web interface (Flask / Streamlit-based prototype)
+- Logging of analysis steps for interpretability
 
 ## Live Demo
 
  https://github.com/AnniRanok/FutureData-AI-Agent/blob/main/static/videos/future-data.mp4
 
 
-##  Features (Prototype Preview)
+## System Architecture
 
-✅ Automatic ingestion of financial data from connected systems  
-✅ Natural language interface powered by OpenAI GPT-4  
-✅ Python + Pandas code generation for on-the-fly calculations  
-✅ AI-generated explanations for KPIs, anomalies, and trends  
-✅ Real-time anomaly detection using Z-Score logic  
-✅ Auto-generated TODO list with next steps  
-✅ Agent activity log showing step-by-step reasoning  
-✅ Voice responses using browser-based Web Speech API  
-✅ Clean, modular interface (Streamlit/Flask-based)
-
-
-## Project Structure
+The system consists of the following components:
 
 <h3>📁 Project Structure</h3>
 <pre>
@@ -51,78 +60,67 @@ FutureData-AI-Agent/
 </pre>
 
 
+## Methodology
+
+The prototype combines:
+
+- Large Language Models (OpenAI GPT-based APIs) for natural language understanding
+- Pandas / NumPy for structured data processing
+- Scipy statistical methods for anomaly detection
+- Rule-based logic for KPI derivation
+- Web interface layer for interaction and visualization
 
 
 ## Example Use Case
 
-FutureData is designed for mid to large finance teams using data lakes or financial consolidation software (e.g. Oracle HFM, SAP, Tagetik, OneStream).
+The system is designed for exploratory financial analysis scenarios such as:
 
-Instead of manually uploading spreadsheets, our system connects to your data sources, then:
-
-Automatically ingests and cleans financial data
-
-Detects anomalies, errors, and inconsistencies
-
-Calculates KPIs, metrics, and management ratios
-
-Generates narrative insights, explanations, and visualizations
-
-Prepares reporting summaries and recommendations
-
-Supports multi-entity, multi-language structures
-
-This saves teams hours of validation work and improves reporting quality across the board.
+- Loading structured financial datasets
+- Identifying outliers and inconsistencies
+- Computing basic KPIs and derived metrics
+- Generating explanations for observed patterns
+- Supporting ad-hoc analytical queries in natural language
 
 
-##  Current Status
+## Limitations
 
-This repository serves as a **technical draft** of the backend and prototype logic.  
-We are building this in preparation for:
+This prototype has the following limitations:
 
-📅 **Presentation: June 18, 2025**  
-📍 **Nevus50 International Conference**, Luxembourg
-
-
-## Roadmap (Nevus50 edition)
-
-🔜 Next development stages:
-
-1. Native integration with data consolidation platforms (Oracle, SAP, Tagetik, OneStream)
-
-2. AI-based data reconciliation and report validation
-
-3. Dynamic KPI libraries with customizable rules
-
-4. Forecast generation and scenario planning
-
-5. Automated audit trail and reporting logs
-
-6. Support for multilingual outputs (UI + voice)
-
-7. Email-based summaries and stakeholder briefings
-
-8. Customizable alert logic (thresholds, frequency, audience)
+- Not connected to live financial systems (e.g. SAP, Oracle, Tagetik)
+- No production-grade security or access control
+- Limited scalability and performance optimization
+- Designed for experimentation and demonstration purposes only
 
 
-##  Tech Stack
+## Status
 
-- **OpenAI GPT-4 / GPT-3.5** — core logic and explanations  
-- **Pandas + NumPy + Matplotlib** — financial analytics  
-- **Scipy (Z-Score)** — anomaly detection  
-- **Web Speech API** — browser-based voice feedback  
-- **Streamlit / Flask** — interactive UI and dashboard logic  
-- **Optional integrations:** FPDF, LangChain, Postgres, Airbyte
+This project is currently in a **research / prototype stage**.
+
+It is intended for:
+- Proof-of-concept validation
+- Internal experimentation
+- Demonstration of AI-assisted financial analytics workflows
+
+
+## Tech Stack
+
+- **OpenAI GPT-4 / GPT-3.5** — natural language interface and reasoning layer for financial data queries  
+- **Python (Pandas, NumPy, Matplotlib)** — data processing, analysis, and visualization  
+- **SciPy (Z-score statistics)** — statistical anomaly detection and outlier analysis  
+- **Flask / Streamlit** — interactive web interface and prototype dashboard layer  
+- **Web Speech API** — browser-based speech synthesis for user feedback (experimental feature)  
+
+### Data & Integration Layer (experimental)
+
+- **PostgreSQL** — relational data storage (optional / experimental integration)  
+- **Airbyte** — data ingestion layer (conceptual integration)  
+- **FPDF** — report generation (PDF export)  
+- **LangChain** — orchestration experiments with LLM workflows  
 
 
 
-## Built by
-Future Data team — turning spreadsheets into smart systems with the help of AI.
 
 
 
-## Contact
 
-Got feedback or ideas?  
-📧 konar.inna@gmail.com  
-🌐 Website: https://futuredata-ai.netlify.app/  
 
