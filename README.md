@@ -18,21 +18,15 @@ The main goal of this prototype is to explore the integration of:
 - Statistical anomaly detection methods
 - AI-assisted explanation of financial metrics
 
+## Methodology
 
-## Core Capabilities
+The system combines:
 
-- Natural language interface for querying financial data using LLMs (OpenAI API)
-- Automated data processing using Pandas and NumPy
-- KPI computation and exploratory data analysis
-- Anomaly detection using statistical methods (Z-score based approach)
-- Generation of Python code for ad-hoc analytical tasks
-- Interactive web interface (Flask / Streamlit-based prototype)
-- Logging of analysis steps for interpretability
-
-## Live Demo
-
- https://github.com/AnniRanok/FutureData-AI-Agent/blob/main/static/videos/future-data.mp4
-
+- Large Language Models (OpenAI GPT-based APIs) for natural language understanding  
+- Pandas / NumPy for data processing and feature engineering  
+- SciPy for statistical anomaly detection (Z-score method)  
+- Rule-based logic for KPI computation  
+- Web-based interface for interaction and visualization  
 
 ## System Architecture
 
@@ -94,13 +88,7 @@ This prototype has the following limitations:
 
 ## Status
 
-This project is currently in a **research / prototype stage**.
-
-It is intended for:
-- Proof-of-concept validation
-- Internal experimentation
-- Demonstration of AI-assisted financial analytics workflows
-
+This project is in a **research / prototype stage** and developed for exploratory AI + financial
 
 ## Tech Stack
 
