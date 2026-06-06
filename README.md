@@ -53,18 +53,6 @@ FutureData-AI-Agent/
 └── ...
 </pre>
 
-
-## Methodology
-
-The prototype combines:
-
-- Large Language Models (OpenAI GPT-based APIs) for natural language understanding
-- Pandas / NumPy for structured data processing
-- Scipy statistical methods for anomaly detection
-- Rule-based logic for KPI derivation
-- Web interface layer for interaction and visualization
-
-
 ## Example Use Case
 
 The system is designed for exploratory financial analysis scenarios such as:
